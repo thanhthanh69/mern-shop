@@ -1,0 +1,35 @@
+###
+POST http://localhost:5000/users/register
+Content-Type: application/json
+
+{
+    "name":"admin",
+    "email":"admin1@gmail.com",
+    "password":"1234",
+    "role":"admin"
+}
+
+###
+GET  http://localhost:5000/users
+
+###
+POST http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+   "email" :"admin1@gmail.com",
+   "password":"1234"
+}
+###
+POST http://localhost:5000/products/
+Content-Type: application/json
+
+{
+    "product_id":"pr01",
+    "title":"product 01",
+    "price":1000,
+    "description":"description",
+    "content":"content",
+    "images":"",
+    "category":"",
+}
